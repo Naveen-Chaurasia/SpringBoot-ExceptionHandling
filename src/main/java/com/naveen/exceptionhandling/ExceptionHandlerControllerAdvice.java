@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class ExceptionHandlerControllerAdvice {
 	
 	
-
+//	@ControllerAdvice used for global error handling in the Spring MVC application. It also has full control over the body of the response
+//	and the status code.
+//	It means that we can have a centralized way to handle exceptions, binding, etc. it applies to all the defined controllers.
+//	
 	
 	@ExceptionHandler(ResourceNotFoundException.class)
 	@ResponseStatus(value = HttpStatus.NOT_FOUND)
