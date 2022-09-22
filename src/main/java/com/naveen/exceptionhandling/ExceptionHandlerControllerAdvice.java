@@ -16,6 +16,9 @@ public class ExceptionHandlerControllerAdvice {
 //	It means that we can have a centralized way to handle exceptions, binding, etc. it applies to all the defined controllers.
 //	
 	
+//	Reference:
+//		https://bushansirgur.in/spring-mvc-controlleradvice-annotation-with-example/#:~:text=%40ControllerAdvice%20used%20for%20global%20error,to%20all%20the%20defined%20controllers.
+//	
 	@ExceptionHandler(ResourceNotFoundException.class)
 	@ResponseStatus(value = HttpStatus.NOT_FOUND)
 	public @ResponseBody ExceptionResponse handleResourceNotFound(final ResourceNotFoundException exception,
