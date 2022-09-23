@@ -19,6 +19,7 @@ class Testthrows3{
   }  
 }  
 
+Rule: If we are calling a method that declares an exception, we must either caught or declare the exception.
 
 Case 1: Handle Exception Using try-catch block
 
@@ -38,3 +39,6 @@ public class Testthrows2{
     System.out.println("normal flow...");  
   }  
 }  
+
+
+https://www.javatpoint.com/difference-between-throw-and-throws-in-java
