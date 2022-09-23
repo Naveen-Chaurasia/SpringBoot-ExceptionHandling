@@ -1,0 +1,40 @@
+In case we declare the exception, if exception does not occur, the code will be executed fine.
+In case we declare the exception and the exception occurs, it will be thrown at runtime because throws does not handle the exception.
+
+
+Examples:
+
+import java.io.*;  
+class M{  
+ void method()throws IOException{  
+  System.out.println("device operation performed");  
+ }  
+}  
+class Testthrows3{  
+   public static void main(String args[])throws IOException{//declare exception  
+     M m=new M();  
+     m.method();  
+  
+    System.out.println("normal flow...");  
+  }  
+}  
+
+
+Case 1: Handle Exception Using try-catch block
+
+import java.io.*;  
+class M{  
+ void method()throws IOException{  
+  throw new IOException("device error");  
+ }  
+}  
+public class Testthrows2{  
+   public static void main(String args[]){  
+    try{  
+     M m=new M();  
+     m.method();  
+    }catch(Exception e){System.out.println("exception handled");}     
+  
+    System.out.println("normal flow...");  
+  }  
+}  
