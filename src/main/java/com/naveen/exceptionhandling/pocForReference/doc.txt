@@ -42,3 +42,6 @@ public class Testthrows2{
 
 
 https://www.javatpoint.com/difference-between-throw-and-throws-in-java
+
+
+https://www.tutorialspoint.com/spring_boot/spring_boot_exception_handling.htm
