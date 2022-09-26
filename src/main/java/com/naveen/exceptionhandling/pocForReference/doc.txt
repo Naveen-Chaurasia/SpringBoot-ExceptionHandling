@@ -40,6 +40,8 @@ public class Testthrows2{
   }  
 }  
 
+The throw and throws is the concept of exception handling where the throw keyword throw the exception explicitly from a method or a block
+ of code whereas the throws keyword is used in signature of the method.
 
 https://www.javatpoint.com/difference-between-throw-and-throws-in-java
 
