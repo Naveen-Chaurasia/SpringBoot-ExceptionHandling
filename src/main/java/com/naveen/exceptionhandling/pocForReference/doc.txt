@@ -99,3 +99,6 @@ public void constructUriWithQueryParameter() {
      assertEquals("http://www.google.com/?q=baeldung", uriComponents.toUriString());
 }
 
+The query will be added to the main part of the link. We can provide multiple query parameters, using brackets {…}.
+ They will be replaced by keywords in the method named buildAndExpand(…).
+
