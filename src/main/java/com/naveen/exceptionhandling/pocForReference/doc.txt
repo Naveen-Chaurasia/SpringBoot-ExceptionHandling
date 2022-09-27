@@ -85,3 +85,17 @@ public class TestThrow {
 }  
 
 https://www.tutorialspoint.com/spring_boot/spring_boot_exception_handling.htm
+
+
+uricomponentBuilder=
+https://www.baeldung.com/spring-uricomponentsbuilder
+
+@Test
+public void constructUriWithQueryParameter() {
+    UriComponents uriComponents = UriComponentsBuilder.newInstance()
+      .scheme("http").host("www.google.com")
+      .path("/").query("q={keyword}").buildAndExpand("baeldung");
+
+     assertEquals("http://www.google.com/?q=baeldung", uriComponents.toUriString());
+}
+
